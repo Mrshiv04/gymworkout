@@ -1,0 +1,44 @@
+.DetailsPage {
+	display: flex;
+}
+
+.leftDetails {
+	flex: 0.5;
+	padding-top: 80px;
+	margin-right: 10%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rightDetails {
+	flex: 0.5;
+	padding-top: 130px;
+	margin-left: 50px;
+}
+
+.rightDetails > ul {
+	list-style: none;
+}
+
+.rightDetails > ul li:before {
+	content: '☑';
+	padding: 20px;
+}
+
+li:not(:first-of-type) {
+	margin-top: 1.5em;
+}
+
+li:not(:last-of-type) {
+	margin-bottom: 1.5em;
+}
+
+.leftComponent {
+	font-size: 30px;
+}
+
+.rightComponent {
+	width: 50%;
+
+	border-radius: 5px;
+}
