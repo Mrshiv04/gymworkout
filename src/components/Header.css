@@ -35,7 +35,8 @@
 
 .header_left > p {
 	color: #e67817;
-	font-style: italic;
+	font-size: 20px;
+	/* font-style: italic; */
 	font-weight: bold;
 }
 

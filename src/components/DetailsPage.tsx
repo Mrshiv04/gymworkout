@@ -24,9 +24,9 @@ function DetailsPage() {
 					className='leftComponent'
 				>
 					<span
-						style={{ fontSize: '40px', color: 'orange', fontWeight: 'bold' }}
+						style={{ fontSize: '40px', color: '#e67817', fontWeight: 'bold' }}
 					>
-						Fitbit{' '}
+						Guardian Gym{' '}
 					</span>
 					is designed for people who want to track their progress and reach
 					trainig goals

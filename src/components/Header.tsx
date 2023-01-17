@@ -8,7 +8,7 @@ function Header() {
 		<div className='header'>
 			<div className='header_left'>
 				<img src={Gymlogo} className='header_logo' />
-				<p>Shivam's Gym App</p>
+				<p>Guardian Gym</p>
 			</div>
 			<div className='header_right'>
 				<div className='logo_right'>
