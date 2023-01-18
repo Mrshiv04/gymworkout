@@ -24,7 +24,12 @@ function DetailsPage() {
 					className='leftComponent'
 				>
 					<span
-						style={{ fontSize: '40px', color: '#e67817', fontWeight: 'bold' }}
+						style={{
+							fontSize: '40px',
+							color: '#e67817',
+							fontWeight: 'bold',
+							textDecoration: 'underline',
+						}}
 					>
 						Guardian Gym{' '}
 					</span>
