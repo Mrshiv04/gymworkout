@@ -3,7 +3,8 @@ import './App.css';
 import LandingPage from '../src/components/LandingPage.tsx';
 import Header from '../src/components/Header.tsx';
 import DetailsPage from './components/DetailsPage.tsx';
-import CursorTrail from 'cursor-trails';
+// import CursorTrail from 'cursor-trails';
+import ExercisePage from './components/ExercisePage.tsx';
 
 // CursorTrail({
 // 	container: document.body,
@@ -20,6 +21,7 @@ function App() {
 			<Header />
 			<LandingPage />
 			<DetailsPage />
+			<ExercisePage />
 		</div>
 	);
 }

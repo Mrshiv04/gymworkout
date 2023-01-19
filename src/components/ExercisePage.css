@@ -1,0 +1,36 @@
+.ExercisePage {
+	/* margin: auto; */
+	/* letter-spacing: 6px; */
+	min-height: 100vh;
+}
+
+.exerciseHeader {
+	padding-top: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+}
+
+.bodyPartHeader {
+	padding-top: 30px;
+	letter-spacing: 6px;
+}
+
+.dropdownButton {
+	margin-top: 10px;
+	background-color: transparent;
+	border: 1px solid orange;
+	padding: 10px 20px;
+	color: orange;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.bodyList {
+	margin-top: 25px;
+	list-style: none;
+	color: orange;
+	cursor: pointer;
+	margin-right: 20px;
+	text-decoration: underline;
+}
