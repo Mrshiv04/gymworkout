@@ -4,7 +4,6 @@ import axios from 'axios';
 import ExerciseCard from './ExerciseCard.js';
 
 let bodyPart;
-let bodyPartDetail;
 const options = {
 	method: 'GET',
 	url: 'https://exercisedb.p.rapidapi.com/exercises/bodyPartList',
@@ -25,9 +24,9 @@ axios
 
 function ExercisePage() {
 	const [isOpen, setIsOpen] = useState(false);
+	const [bodyPartDetail, setBodyPartDetail] = useState();
 
 	const namePlate = (name) => {
-		console.log(name);
 		setIsOpen(false);
 
 		const options = {
@@ -42,8 +41,7 @@ function ExercisePage() {
 		axios
 			.request(options)
 			.then(function (response) {
-				bodyPartDetail = response.data;
-				console.log('details=============> ', response.data);
+				setBodyPartDetail(response.data);
 			})
 			.catch(function (error) {
 				console.error(error);
@@ -73,7 +71,13 @@ function ExercisePage() {
 					</ul>
 				)}
 			</div>
-			{bodyPartDetail?.length > 0 ? <ExerciseCard /> : <h2>hello</h2>}
+			{bodyPartDetail ? (
+				<ExerciseCard exerciseDetails={bodyPartDetail} />
+			) : (
+				<p className='displayMessage'>
+					Your exercises will be displayed here...
+				</p>
+			)}
 		</div>
 	);
 }

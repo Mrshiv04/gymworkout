@@ -20,4 +20,14 @@
 .exerciseName {
 	letter-spacing: 10px;
 	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.innerDetail {
+	color: orange;
+	letter-spacing: 5px;
+}
+
+.innerResponse {
+	text-transform: capitalize;
 }

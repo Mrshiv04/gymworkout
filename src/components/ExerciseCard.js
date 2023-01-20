@@ -1,21 +1,29 @@
 import React from 'react';
 import './ExerciseCard.css';
 
-function ExerciseCard() {
+function ExerciseCard(props) {
 	return (
 		<div>
-			<div className='exerciseCard'>
-				<img
-					className='exerciseImage'
-					src='http://d205bpvrqc9yn1.cloudfront.net/0007.gif'
-				/>
-				<div className='detailsSection'>
-					<p className='exerciseName'>exercise name</p>
-					<p>body part</p>
-					<p>target muscle</p>
-					<p>equipment</p>
+			{props.exerciseDetails.map((details) => (
+				<div className='exerciseCard'>
+					<img className='exerciseImage' src={details.gifUrl} />
+					<div className='detailsSection'>
+						<p className='exerciseName'>{details.name}</p>
+						<p className='innerResponse'>
+							<span className='innerDetail'>Body Part Impacted: </span>
+							{details.bodyPart}
+						</p>
+						<p className='innerResponse'>
+							<span className='innerDetail'>Target Muscle: </span>
+							{details.target}
+						</p>
+						<p className='innerResponse'>
+							<span className='innerDetail'>Equipment Used: </span>
+							{details.equipment}
+						</p>
+					</div>
 				</div>
-			</div>
+			))}
 		</div>
 	);
 }
