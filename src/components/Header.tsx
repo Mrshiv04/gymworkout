@@ -8,7 +8,9 @@ function Header() {
 		<div className='header'>
 			<div className='header_left'>
 				<img src={Gymlogo} className='header_logo' />
-				<p style={{ letterSpacing: '10px' }}>Guardian Gym</p>
+				<p style={{ letterSpacing: '15px', fontWeight: 'normal' }}>
+					Guardian Gym
+				</p>
 			</div>
 			<div className='header_right'>
 				<div className='logo_right'>
